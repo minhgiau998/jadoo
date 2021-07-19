@@ -290,4 +290,8 @@ module.exports = {
     800: "#1e293b",
     900: "#0f172a",
   },
+  // custom value
+  ebony: {
+    clay: "#212832",
+  },
 };

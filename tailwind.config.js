@@ -1,4 +1,5 @@
 const colors = require("./public/assets/styles/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   purge: ["./public/**/*.html"],
@@ -24,6 +25,8 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      // custom value
+      ebony: colors.ebony,
     },
     spacing: {
       px: "1px",
@@ -61,6 +64,11 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      // custom value
+      "6px": "6px",
+      "9px": "9px",
+      "22px": "22px",
+      "47px": "47px",
     },
     animation: {
       none: "none",
@@ -150,6 +158,8 @@ module.exports = {
       "2xl": "1rem",
       "3xl": "1.5rem",
       full: "9999px",
+      // custom value
+      "5px": "5px",
     },
     borderWidth: {
       DEFAULT: "1px",
@@ -157,6 +167,8 @@ module.exports = {
       2: "2px",
       4: "4px",
       8: "8px",
+      // custom value
+      1: "1px",
     },
     boxShadow: {
       sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
@@ -548,6 +560,8 @@ module.exports = {
       max: "max-content",
       prose: "65ch",
       ...breakpoints(theme("screens")),
+      // custom value
+      "8xl": "90rem",
     }),
     minHeight: {
       0: "0px",
@@ -815,6 +829,8 @@ module.exports = {
       30: "30",
       40: "40",
       50: "50",
+      // custom value
+      "-1": "-1",
     },
   },
   variantOrder: [
