@@ -9,12 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="stylesheet" href="/build/tailwind.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-      rel="stylesheet"
-    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    </style>
     <title>Jadoo - Travel Agency Landing Page UI</title>
   </head>
   <body class="relative">
@@ -28,19 +25,19 @@
       <!-- NOTE: Container -->
       <div class="max-w-6xl px-4 py-0 mx-auto my-0">
         <!-- NOTE: Header -->
-        <header class="flex items-center justify-between font-medium pt-47px">
+        <header class="flex items-center justify-between pt-47px">
           <img src="./assets/images/logo.png" alt="Jadoo" />
           <ul class="flex items-center">
-            <li class="mr-16"><a href="">Destinations</a></li>
-            <li class="mr-16"><a href="">Hotels</a></li>
-            <li class="mr-16"><a href="">Flights</a></li>
-            <li class="mr-16"><a href="">Bookings</a></li>
+            <li class="mr-16"><a href="#">Destinations</a></li>
+            <li class="mr-16"><a href="#">Hotels</a></li>
+            <li class="mr-16"><a href="#">Flights</a></li>
+            <li class="mr-16"><a href="#">Bookings</a></li>
             <li class="mr-3">
               <button class="px-22px py-9px focus:outline-none">Login</button>
             </li>
             <li class="mr-10">
               <button
-                class="box-border transition-all duration-300 border-solid  ease-DEFAULT px-22px py-9px border-ebony-clay border-1 rounded-5px focus:outline-none hover:bg-ebony-clay hover:text-white"
+                class="box-border flex items-center transition-all duration-300 border-solid  ease-DEFAULT px-22px py-9px border-ebony-clay border-1 rounded-5px focus:outline-none hover:bg-ebony-clay hover:text-white"
               >
                 Sign up
               </button>
@@ -53,6 +50,58 @@
           </ul>
         </header>
         <!-- NOTE: Hero -->
+        <div class="relative flex flex-row items-center mt-18px">
+          <div class="flex flex-col w-54%">
+            <p class="font-bold uppercase text-20px-30px text-terracotta">
+              Best Destinations around the world
+            </p>
+            <p
+              class="mt-6 font-bold  font-volkhov -tracking-04 text-84px-89px text-bunting"
+            >
+              Travel,
+              <span class="relative"
+                >enjoy
+                <img
+                  src="./assets/images/heading-decore.png"
+                  class="absolute right-0 h-3"
+                  alt=""
+                  style="top: 88px"
+              /></span>
+              and live a new and full life
+            </p>
+            <p class="font-medium mt-30px text-comet text-16px-30px">
+              Built Wicket longer admire do barton vanity itself do in it.
+              Preferred to sportsmen it engrossed listening. Park gate sell they
+              west hard for the.
+            </p>
+            <div class="flex flex-row items-center mt-34px space-x-44px">
+              <button
+                class="font-medium text-white transition-all duration-300  ease-DEFAULT px-26px py-18px bg-web-orange rounded-10px hover:bg-ebony-clay hover:text-web-orange"
+                style="box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15)"
+              >
+                Find out more
+              </button>
+              <div class="flex flex-row items-center space-x-21px">
+                <button
+                  class="flex items-center p-5 transition-all duration-300 rounded-full  ease-DEFAULT bg-terracotta hover:bg-ebony-clay"
+                  style="box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3)"
+                >
+                  <img src="./assets/images/play.png" alt="" />
+                </button>
+                <a href="#" class="font-medium text-17px-25px text-nevada">
+                  Play Demo
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="h-764px"></div>
+          <img
+            src="./assets/images/hero-banner.png"
+            alt=""
+            class="absolute top-0 w-783px h-764px"
+            style="right: -60px"
+          />
+        </div>
       </div>
     </div>
   </body>

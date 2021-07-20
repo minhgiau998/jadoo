@@ -294,4 +294,11 @@ module.exports = {
   ebony: {
     clay: "#212832",
   },
+  terracotta: "#DF6951",
+  bunting: "#181E4B",
+  comet: "#5E6282",
+  web: {
+    orange: "#F1A501",
+  },
+  nevada: "#686D77",
 };
