@@ -27,6 +27,11 @@ module.exports = {
       pink: colors.pink,
       // custom value
       ebony: colors.ebony,
+      terracotta: colors.terracotta,
+      bunting: colors.bunting,
+      comet: colors.comet,
+      web: colors.web,
+      nevada: colors.nevada,
     },
     spacing: {
       px: "1px",
@@ -67,8 +72,19 @@ module.exports = {
       // custom value
       "6px": "6px",
       "9px": "9px",
+      "18px": "18px",
+      "21px": "21px",
       "22px": "22px",
+      "26px": "26px",
+      "30px": "30px",
+      "34px": "34px",
+      "44px": "44px",
       "47px": "47px",
+      "764px": "764px",
+      "783px": "783px",
+      "1200px": "1200px",
+      // percent
+      "54%": "54%",
     },
     animation: {
       none: "none",
@@ -160,6 +176,7 @@ module.exports = {
       full: "9999px",
       // custom value
       "5px": "5px",
+      "10px": "10px",
     },
     borderWidth: {
       DEFAULT: "1px",
@@ -291,6 +308,7 @@ module.exports = {
         '"Courier New"',
         "monospace",
       ],
+      volkhov: ["'Volkhov'", "serif"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -306,6 +324,12 @@ module.exports = {
       "7xl": ["4.5rem", { lineHeight: "1" }],
       "8xl": ["6rem", { lineHeight: "1" }],
       "9xl": ["8rem", { lineHeight: "1" }],
+      // custom value
+      "20px-30px": ["20px", { lineHeight: "30px" }],
+      "84px-89px": ["84px", { lineHeight: "89px" }],
+      "16px-30px": ["16px", { lineHeight: "30px" }],
+      "18px-23px": ["18px", { lineHeight: "23px" }],
+      "17px-25px": ["17px", { lineHeight: "25px" }],
     },
     fontWeight: {
       thin: "100",
@@ -509,6 +533,8 @@ module.exports = {
       wide: "0.025em",
       wider: "0.05em",
       widest: "0.1em",
+      // custom value
+      "-04": "-0.04em",
     },
     lineHeight: {
       none: "1",
