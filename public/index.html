@@ -9,8 +9,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="stylesheet" href="/build/tailwind.css" />
+    <link rel="stylesheet" href="./assets/styles/home.css" />
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
     </style>
     <title>Jadoo - Travel Agency Landing Page UI</title>
   </head>
@@ -19,6 +20,12 @@
       src="./assets/images/hero-background.png"
       alt=""
       class="absolute w-full -z-1"
+    />
+    <img
+      src="./assets/images/service-decore.png"
+      alt=""
+      class="absolute right-0"
+      style="top: 966px"
     />
     <!-- NOTE: Wrapper -->
     <div class="mx-auto my-0 max-w-8xl">
@@ -51,7 +58,7 @@
         </header>
         <!-- NOTE: Hero -->
         <div class="relative flex flex-row items-center mt-18px">
-          <div class="flex flex-col w-54%">
+          <div class="flex flex-col w-1/2">
             <p class="font-bold uppercase text-20px-30px text-terracotta">
               Best Destinations around the world
             </p>
@@ -76,14 +83,14 @@
             </p>
             <div class="flex flex-row items-center mt-34px space-x-44px">
               <button
-                class="font-medium text-white transition-all duration-300  ease-DEFAULT px-26px py-18px bg-web-orange rounded-10px hover:bg-ebony-clay hover:text-web-orange"
+                class="font-medium text-white transition-all duration-300  focus:outline-none ease-DEFAULT px-26px py-18px bg-web-orange rounded-10px hover:bg-ebony-clay hover:text-web-orange"
                 style="box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15)"
               >
                 Find out more
               </button>
               <div class="flex flex-row items-center space-x-21px">
                 <button
-                  class="flex items-center p-5 transition-all duration-300 rounded-full  ease-DEFAULT bg-terracotta hover:bg-ebony-clay"
+                  class="flex items-center p-5 transition-all duration-300 rounded-full  focus:outline-none ease-DEFAULT bg-terracotta hover:bg-ebony-clay"
                   style="box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3)"
                 >
                   <img src="./assets/images/play.png" alt="" />
@@ -99,8 +106,102 @@
             src="./assets/images/hero-banner.png"
             alt=""
             class="absolute top-0 w-783px h-764px"
-            style="right: -60px"
+            style="right: -80px"
           />
+        </div>
+        <!-- NOTE: Service -->
+        <div class="mt-97px">
+          <p class="font-semibold text-center text-18px-27px text-comet">
+            CATEGORY
+          </p>
+          <p
+            class="font-bold text-center capitalize  font-volkhov text-50px-64px text-bunting mt-10px"
+          >
+            We Offer Best Services
+          </p>
+          <div class="flex flex-row items-center mt-66px space-x-30px">
+            <div class="relative cursor-pointer service-cards">
+              <div
+                class="absolute  w-100px h-100px bg-terracotta rounded-tl-30px rounded-br-10px -z-1 service-cards--animation"
+              ></div>
+              <div
+                class="flex flex-col items-center bg-white  rounded-30px px-50px pb-45px service-cards--box-shadow"
+              >
+                <img src="./assets/images/service-weather.png" alt="" />
+                <p
+                  class="font-semibold text-center  font-open text-20px-27px text-port-gore mt-30px"
+                >
+                  Weather
+                </p>
+                <p
+                  class="font-medium text-center  text-16px-26px text-comet mt-15px"
+                >
+                  Built Wicket longer admire do barton vanity itself do in it.
+                </p>
+              </div>
+            </div>
+            <div class="relative cursor-pointer service-cards">
+              <div
+                class="absolute  w-100px h-100px bg-terracotta rounded-tl-30px rounded-br-10px -z-1 service-cards--animation"
+              ></div>
+              <div
+                class="flex flex-col items-center bg-white  rounded-30px px-50px pb-45px service-cards--box-shadow"
+              >
+                <img src="./assets/images/service-airplane.png" alt="" />
+                <p
+                  class="font-semibold text-center  font-open text-20px-27px text-port-gore mt-30px"
+                >
+                  Best Flights
+                </p>
+                <p
+                  class="font-medium text-center  text-16px-26px text-comet mt-15px"
+                >
+                  Engrossed listening. Park gate sell they west hard for the.
+                </p>
+              </div>
+            </div>
+            <div class="relative cursor-pointer service-cards">
+              <div
+                class="absolute  w-100px h-100px bg-terracotta rounded-tl-30px rounded-br-10px -z-1 service-cards--animation"
+              ></div>
+              <div
+                class="flex flex-col items-center bg-white  rounded-30px px-50px pb-45px service-cards--box-shadow"
+              >
+                <img src="./assets/images/service-event.png" alt="" />
+                <p
+                  class="font-semibold text-center  font-open text-20px-27px text-port-gore mt-30px"
+                >
+                  Local Events
+                </p>
+                <p
+                  class="font-medium text-center  text-16px-26px text-comet mt-15px"
+                >
+                  Barton vanity itself do in it. Preferd to men it engrossed
+                  listening.
+                </p>
+              </div>
+            </div>
+            <div class="relative cursor-pointer service-cards">
+              <div
+                class="absolute  w-100px h-100px bg-terracotta rounded-tl-30px rounded-br-10px -z-1 service-cards--animation"
+              ></div>
+              <div
+                class="flex flex-col items-center bg-white  rounded-30px px-50px pb-45px service-cards--box-shadow"
+              >
+                <img src="./assets/images/service-customer.png" alt="" />
+                <p
+                  class="font-semibold text-center  font-open text-20px-27px text-port-gore mt-30px"
+                >
+                  Customization
+                </p>
+                <p
+                  class="font-medium text-center  text-16px-26px text-comet mt-15px"
+                >
+                  We deliver outsourced aviation services for military customers
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
