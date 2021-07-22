@@ -32,6 +32,7 @@ module.exports = {
       comet: colors.comet,
       web: colors.web,
       nevada: colors.nevada,
+      port: colors.port,
     },
     spacing: {
       px: "1px",
@@ -72,6 +73,8 @@ module.exports = {
       // custom value
       "6px": "6px",
       "9px": "9px",
+      "10px": "10px",
+      "15px": "15px",
       "18px": "18px",
       "21px": "21px",
       "22px": "22px",
@@ -79,12 +82,15 @@ module.exports = {
       "30px": "30px",
       "34px": "34px",
       "44px": "44px",
+      "45px": "45px",
       "47px": "47px",
+      "50px": "50px",
+      "66px": "66px",
+      "97px": "97px",
+      "100px": "100px",
       "764px": "764px",
       "783px": "783px",
       "1200px": "1200px",
-      // percent
-      "54%": "54%",
     },
     animation: {
       none: "none",
@@ -177,6 +183,8 @@ module.exports = {
       // custom value
       "5px": "5px",
       "10px": "10px",
+      "30px": "30px",
+      "36px": "36px",
     },
     borderWidth: {
       DEFAULT: "1px",
@@ -309,6 +317,7 @@ module.exports = {
         "monospace",
       ],
       volkhov: ["'Volkhov'", "serif"],
+      open: ["'Open Sans'", "sans-serif"],
     },
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -330,6 +339,10 @@ module.exports = {
       "16px-30px": ["16px", { lineHeight: "30px" }],
       "18px-23px": ["18px", { lineHeight: "23px" }],
       "17px-25px": ["17px", { lineHeight: "25px" }],
+      "18px-27px": ["18px", { lineHeight: "27px" }],
+      "50px-64px": ["50px", { lineHeight: "64px" }],
+      "20px-27px": ["20px", { lineHeight: "27px" }],
+      "16px-26px": ["16px", { lineHeight: "26px" }],
     },
     fontWeight: {
       thin: "100",

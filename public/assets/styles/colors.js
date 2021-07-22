@@ -301,4 +301,7 @@ module.exports = {
     orange: "#F1A501",
   },
   nevada: "#686D77",
+  port: {
+    gore: "#1E1D4C",
+  },
 };
