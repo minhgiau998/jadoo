@@ -304,4 +304,12 @@ module.exports = {
   port: {
     gore: "#1E1D4C",
   },
+  buttercup: "#F0BB1F",
+  flamingo: "#F15A2B",
+  orient: "#006380",
+  woodsmoke: "#080809",
+  waterloo: "#84829A",
+  medium: {
+    purple: "#8A79DF",
+  },
 };
