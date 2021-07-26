@@ -172,3 +172,15 @@
 .testimonial-card {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
+
+/* NOTE: Branding */
+.branding-image {
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.branding-image:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
