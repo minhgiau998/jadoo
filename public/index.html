@@ -13,6 +13,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
     </style>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Jadoo - Travel Agency Landing Page UI</title>
   </head>
   <body class="relative">
@@ -57,7 +58,7 @@
           </ul>
         </header>
         <!-- NOTE: Hero -->
-        <div class="relative flex flex-row items-center mt-18px">
+        <div class="relative flex flex-row items-center mt-18px hero">
           <div class="flex flex-col w-1/2">
             <p class="font-bold uppercase text-20px-30px text-terracotta">
               Best Destinations around the world
@@ -110,7 +111,7 @@
           />
         </div>
         <!-- NOTE: Service -->
-        <div class="mt-97px">
+        <div class="mt-97px service">
           <p class="font-semibold text-center text-18px-27px text-comet">
             CATEGORY
           </p>
@@ -204,7 +205,7 @@
           </div>
         </div>
         <!-- NOTE: Destinations -->
-        <div class="relative mt-123px">
+        <div class="relative mt-123px destination">
           <img
             src="./assets/images/destination-decore.png"
             alt=""
@@ -307,7 +308,9 @@
           </div>
         </div>
         <!-- NOTE:  Booking -->
-        <div class="flex flex-row items-center w-full mt-186px space-x-118px">
+        <div
+          class="flex flex-row items-center w-full  mt-186px space-x-118px booking"
+        >
           <div class="w-1/2">
             <p class="font-semibold text-18px-27px text-comet">Easy and Fast</p>
             <p
@@ -471,6 +474,24 @@
         </div>
         <!-- NOTE: Testimonials -->
         <div class="mt-200px"></div>
+        <!-- NOTE: Javascript -->
+        <script>
+          // Scroll Reveal Animation Effect
+          const sr = ScrollReveal({
+            origin: "top",
+            distance: "80px",
+            duration: 2000,
+          });
+
+          // Hero Animation
+          sr.reveal(".hero", {});
+          // Service Animation
+          sr.reveal(".service", {});
+          // Destination Animation
+          sr.reveal(".destination", {});
+          // Booking Animation
+          sr.reveal(".booking", {});
+        </script>
       </div>
     </div>
   </body>
