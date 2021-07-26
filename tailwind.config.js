@@ -77,6 +77,7 @@ module.exports = {
       80: "20rem",
       96: "24rem",
       // custom value
+      "5px": "5px",
       "6px": "6px",
       "9px": "9px",
       "10px": "10px",
@@ -99,8 +100,12 @@ module.exports = {
       "50px": "50px",
       "60px": "60px",
       "66px": "66px",
+      "68px": "68px",
+      "82px": "82px",
+      "87px": "87px",
       "97px": "97px",
       "100px": "100px",
+      "114px": "114px",
       "118px": "118px",
       "123px": "123px",
       "129px": "129px",
@@ -373,6 +378,7 @@ module.exports = {
       "16px-26px": ["16px", { lineHeight: "26px" }],
       "16px-20px": ["16px", { lineHeight: "20px" }],
       "14px-17px": ["14px", { lineHeight: "17px" }],
+      "14px-21px": ["14px", { lineHeight: "21px" }],
     },
     fontWeight: {
       thin: "100",

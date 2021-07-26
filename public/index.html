@@ -472,8 +472,130 @@
             </div>
           </div>
         </div>
-        <!-- NOTE: Testimonials -->
-        <div class="mt-200px"></div>
+        <!-- NOTE: Testimonial -->
+        <div class="mt-200px testimonial">
+          <div class="flex flex-row space-x-87px">
+            <div class="flex flex-col">
+              <p class="font-semibold uppercase text-18px-27px text-comet">
+                Testimonials
+              </p>
+              <p
+                class="mt-2 font-bold capitalize  font-volkhov text-50px-64px text-bunting"
+              >
+                What people say about Us.
+              </p>
+              <!-- The dots/circles -->
+              <div class="mt-82px space-x-26px">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+            </div>
+            <div class="flex flex-row space-x-114px">
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <div
+                    class="flex flex-col w-full  testimonial-card rounded-10px p-34px"
+                  >
+                    <div class="flex flex-row">
+                      <img
+                        src="https://semantic-ui.com/images/avatar2/large/matthew.png"
+                        alt=""
+                        class="rounded-full w-68px h-68px"
+                      />
+                    </div>
+                    <div class="flex flex-row">
+                      <div class="flex flex-col ml-68px">
+                        <p class="font-medium text-16px-30px text-comet">
+                          “On the Windows talking painted pasture yet its
+                          express parties use. Sure last upon he same as knew
+                          next. Of believed or diverted no.”
+                        </p>
+                        <p
+                          class="font-semibold  mt-34px text-18px-27px text-comet"
+                        >
+                          Mike taylor
+                        </p>
+                        <p class="font-medium mt-5px text-14px-21px text-comet">
+                          Lahore, Pakistan
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div
+                    class="flex flex-col w-full  testimonial-card rounded-10px p-34px"
+                  >
+                    <div class="flex flex-row">
+                      <img
+                        src="https://semantic-ui.com/images/avatar/large/helen.jpg"
+                        alt=""
+                        class="rounded-full w-68px h-68px"
+                      />
+                    </div>
+                    <div class="flex flex-row">
+                      <div class="flex flex-col ml-68px">
+                        <p class="font-medium text-16px-30px text-comet">
+                          “The holiday of a life time - our gulet adventure in
+                          the Dodecanese Greek Islands was without a doubt our
+                          favourite family trip.”
+                        </p>
+                        <p
+                          class="font-semibold  mt-34px text-18px-27px text-comet"
+                        >
+                          Suzy Lautze
+                        </p>
+                        <p class="font-medium mt-5px text-14px-21px text-comet">
+                          Oregon, USA
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mySlides fade">
+                  <div
+                    class="flex flex-col w-full  testimonial-card rounded-10px p-34px"
+                  >
+                    <div class="flex flex-row">
+                      <img
+                        src="https://semantic-ui.com/images/avatar2/large/molly.png"
+                        alt=""
+                        class="rounded-full w-68px h-68px"
+                      />
+                    </div>
+                    <div class="flex flex-row">
+                      <div class="flex flex-col ml-68px">
+                        <p class="font-medium text-16px-30px text-comet">
+                          “Excellent. Our best tour operator yet. The itinerary
+                          was carefully thought through and well balanced. The
+                          trip represented great travel for the cost.”
+                        </p>
+                        <p
+                          class="font-semibold  mt-34px text-18px-27px text-comet"
+                        >
+                          Molly
+                        </p>
+                        <p class="font-medium mt-5px text-14px-21px text-comet">
+                          CA, USA
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col justify-center">
+                <!-- Next and previous buttons -->
+                <div class="arrow arrow-up" onclick="plusSlides(-1)"></div>
+                <div class="arrow arrow-down" onclick="plusSlides(1)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- NOTE: Brand -->
+        <div class="mt-97px"></div>
         <!-- NOTE: Javascript -->
         <script>
           // Scroll Reveal Animation Effect
@@ -491,6 +613,42 @@
           sr.reveal(".destination", {});
           // Booking Animation
           sr.reveal(".booking", {});
+          // Testimonial Animation
+          sr.reveal(".testimonial", {});
+
+          // Carousel
+          var slideIndex = 1;
+          showSlides(slideIndex);
+
+          // Next/previous controls
+          function plusSlides(n) {
+            showSlides((slideIndex += n));
+          }
+
+          // Thumbnail image controls
+          function currentSlide(n) {
+            showSlides((slideIndex = n));
+          }
+
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+              slideIndex = 1;
+            }
+            if (n < 1) {
+              slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          }
         </script>
       </div>
     </div>
