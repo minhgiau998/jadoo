@@ -88,6 +88,7 @@ module.exports = {
       "19px": "19px",
       "21px": "21px",
       "22px": "22px",
+      "25px": "25px",
       "26px": "26px",
       "27px": "27px",
       "30px": "30px",
@@ -101,10 +102,13 @@ module.exports = {
       "60px": "60px",
       "66px": "66px",
       "68px": "68px",
+      "74px": "74px",
+      "79px": "79px",
       "82px": "82px",
       "87px": "87px",
       "97px": "97px",
       "100px": "100px",
+      "111px": "111px",
       "114px": "114px",
       "118px": "118px",
       "123px": "123px",
@@ -121,6 +125,7 @@ module.exports = {
       // variable width
       "9028vw": "9.028vw",
       "31736vw": "31.736vw",
+      "59653vw": "59.653vw",
     },
     animation: {
       none: "none",
@@ -379,6 +384,7 @@ module.exports = {
       "16px-20px": ["16px", { lineHeight: "20px" }],
       "14px-17px": ["14px", { lineHeight: "17px" }],
       "14px-21px": ["14px", { lineHeight: "21px" }],
+      "33px-54px": ["33px", { lineHeight: "54px" }],
     },
     fontWeight: {
       thin: "100",
