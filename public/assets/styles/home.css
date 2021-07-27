@@ -184,3 +184,23 @@
   filter: none;
   -webkit-filter: grayscale(0);
 }
+
+/* NOTE: Subscribe */
+.subscribe {
+  background: url(../images/subscribe-background.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.subscribe-email__button--ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+
+.subscribe-email__button--ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
